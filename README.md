@@ -8,6 +8,7 @@ https://towardsdatascience.com/version-control-for-jupyter-notebook-3e6cef13392d
 
 using links above add this to ~/.jupyter/jupyter_notebook_config.py:
 
+```python3
 import os
 from subprocess import check_call
 
@@ -21,5 +22,6 @@ def post_save(model, os_path, contents_manager):
     check_call(['jupyter', 'nbconvert', '--to', 'html', fname], cwd=d)
 
 c.FileContentsManager.post_save_hook = post_save
+```
 
 so your sheets are saved in multiple files for easy use with git
