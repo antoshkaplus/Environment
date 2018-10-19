@@ -1,62 +1,62 @@
 Remote debugging
 
-ssh <host>
-gdbserver localhost:12121 /... path to bin file
+* ssh <host>
+* gdbserver localhost:12121 /... path to bin file
 
-gdbserver --attach localhost:12121 pid
+* gdbserver --attach localhost:12121 pid
 
-looking for process:
-ps auxww|grep <process name>
+* looking for process:
+* ps auxww|grep <process name>
 
-sudo chmod 775 <file name>
-
-
-git clone <host>:<project location>
-cd <project folder name>
-git submodule init
-git submodule update
-git submodule foreach git checkout master
-git submodule foreach git-pull
-make directories
+* sudo chmod 775 <file name>
 
 
-$ git push origin --delete <branch_name>
+* git clone <host>:<project location>
+* cd <project folder name>
+* git submodule init 
+* git submodule update
+* git submodule foreach git checkout master
+* git submodule foreach git-pull
+* make directories
 
-$ git branch -d <branch_name>
 
-sudo tail -f <file name>
+* $ git push origin --delete <branch_name>
 
-sudo tail -f <file name> | grep program.name
+* $ git branch -d <branch_name>
 
-$ git push origin --delete <branch_name>
-$ git branch -d <branch_name>
+* sudo tail -f <file name>
 
-copy file:
-scp /path/to/source username@/path/to/destination
+* sudo tail -f <file name> | grep program.name
 
-stash to diff:
-git stash show -p stash@{0} > oms.diff
-// make diff from current changes
-git diff >> file.diff
+* $ git push origin --delete <branch_name>
+* $ git branch -d <branch_name>
 
-apply diff:
-git apply change.diff
+* copy file:
+* scp /path/to/source username@/path/to/destination
+
+* stash to diff:
+* git stash show -p stash@{0} > oms.diff
+* // make diff from current changes
+* git diff >> file.diff
+
+* apply diff:
+* git apply change.diff
 
 check if commit was used
 git log | grep <commit_id>
 
-# find first common commit
-git merge-base branch2 branch3
+* # find first common commit
+* git merge-base branch2 branch3
 
-chmod g+rw
-chgrp groupname filename
+* chmod g+rw
+* chgrp groupname filename
 
-egrep 'string1|string2'
-
-
-sudo crontab -l
-sudo crontab -e
+* egrep 'string1|string2'
 
 
-terminal  rm -rf ~/.local/share/Trash/*
-tail -f -n +1
+* sudo crontab -l
+* sudo crontab -e
+
+
+* terminal  rm -rf ~/.local/share/Trash/*
+* tail -f -n +1
