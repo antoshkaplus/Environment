@@ -14,7 +14,7 @@ sudo chmod g+rw
 sudo chgrp groupname filename
 
 **tail:**  
-sudo tail -f <file name>  
+sudo tail -F <file name> *retry if file is not accessible*
 sudo tail -f <file name> | grep program.name   
 sudo tail -f -n +1
 
