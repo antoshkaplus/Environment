@@ -24,3 +24,12 @@ scp /path/to/source username@/path/to/destination
 **crontab:**
 * sudo crontab -l  
 * sudo crontab -e
+
+**nohup** don't terminate the process if terminal is remote and connection get lost, input and output can be specified but otherwise ignored
+
+**&** execute process in the bg, providing back prompt immediately
+
+**ps aux | grep \<pattern\>** grepping process by name
+
+**top -u \<username\>** tops processes by username
+
