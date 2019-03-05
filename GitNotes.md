@@ -28,3 +28,5 @@ git merge-base branch2 branch3
 
 **remove all local branches except master**  
 git branch | grep -v "master" | xargs git branch -D
+
+**when working remotely passphase has to be empty to avoid entering it every time**
