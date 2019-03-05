@@ -33,3 +33,5 @@ scp /path/to/source username@/path/to/destination
 
 **top -u \<username\>** tops processes by username
 
+**update env vars from bash** source ~/.bash_profile 
+
