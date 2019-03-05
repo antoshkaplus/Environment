@@ -25,3 +25,6 @@ git log | grep \<commit_id\>
 
 **find first common commit:**  
 git merge-base branch2 branch3  
+
+**remove all local branches except master**
+git branch | grep -v "master" | xargs git branch -D
