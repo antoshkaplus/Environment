@@ -38,4 +38,4 @@ scp /path/to/source username@/path/to/destination
 **zip:** zip -r compressed_filename.zip foldername  
 
 **systemd:**  
-* sudo systemctl daemon-reload  
+sudo systemctl daemon-reload  
