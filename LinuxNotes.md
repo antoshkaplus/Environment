@@ -35,4 +35,7 @@ scp /path/to/source username@/path/to/destination
 
 **update env vars from bash** source ~/.bash_profile 
 
-**zip:** zip -r compressed_filename.zip foldername
+**zip:** zip -r compressed_filename.zip foldername  
+
+**systemd:**  
+* sudo systemctl daemon-reload  
