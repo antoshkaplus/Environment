@@ -12,6 +12,9 @@ make directories
 git push origin --delete <branch_name>  
 git branch -d <branch_name>  
 
+**delte all local branches**
+git branch | xargs git branch -D 
+
 **stash to diff:**  
 git stash show -p stash@{0} > oms.diff  
 *make diff from current changes*  
