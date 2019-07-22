@@ -8,9 +8,9 @@ git submodule foreach git checkout master
 git submodule foreach git-pull  
 make directories  
   
-**delete branch:**
-git push origin --delete <branch_name>
-git branch -d <branch_name>
+**delete branch:**  
+git push origin --delete <branch_name>  
+git branch -d <branch_name>  
 
 **stash to diff:**  
 git stash show -p stash@{0} > oms.diff  
