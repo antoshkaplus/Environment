@@ -39,3 +39,10 @@ scp /path/to/source username@/path/to/destination
 
 **systemd:**  
 sudo systemctl daemon-reload  
+
+**update packages**
+sudo apt update & sudo apt upgrade
+
+**disc space**: 
+df -j
+ls -lha
