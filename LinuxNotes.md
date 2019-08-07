@@ -1,5 +1,5 @@
 
-**remote debugging:**
+**remote debugging:**  
 gdbserver localhost:12121 /... path to bin file  
 gdbserver --attach localhost:12121 pid
 
