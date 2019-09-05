@@ -33,3 +33,6 @@ git merge-base branch2 branch3
 git branch | grep -v "master" | xargs git branch -D
 
 **when working remotely passphase has to be empty to avoid entering it every time**
+
+**on firewall network git 22 port may be closed, so https should be used and credentials cache**
+git config --global credential.helper 'cache --timeout=3600' (setting is in seconds)
