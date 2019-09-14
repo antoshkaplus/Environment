@@ -46,3 +46,6 @@ sudo apt update & sudo apt upgrade
 **disc space**: 
 df -j
 ls -lha
+
+**ssh forwarding:  
+`ssh -L 8181:ny4-1.bluefintrading.com:443 anton^logunov@ny4-1.bluefintrading.com`
