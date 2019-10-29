@@ -37,5 +37,5 @@ git branch | grep -v "master" | xargs git branch -D
 **on firewall network git 22 port may be closed, so https should be used and credentials cache**  
 git config --global credential.helper 'cache --timeout=3600' (setting is in seconds)
 
-**reset origin**
-git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+**reset origin**  
+git remote set-url origin https://github.com/USERNAME/REPOSITORY.git  
