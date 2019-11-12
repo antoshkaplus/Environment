@@ -6,3 +6,6 @@ https://linuxgazette.net/155/krishnakumar.html
 
 Transparent Huge Pages
 https://www.kernel.org/doc/Documentation/vm/transhuge.txt
+
+Stats on Huge Pages
+https://kerneltalks.com/services/what-is-huge-pages-in-linux/
