@@ -17,3 +17,5 @@ hugetlbfs - to allocate
 
 4 KB - regular
 2 MB or 1 GB - huge page size, can't mix
+
+Region-based memory management
