@@ -9,3 +9,11 @@ https://www.kernel.org/doc/Documentation/vm/transhuge.txt
 
 Stats on Huge Pages
 https://kerneltalks.com/services/what-is-huge-pages-in-linux/
+
+
+Need large mappings that they will do random access to, cuz it's worst possible case for TLB (Translation Lookaside Buffer).
+
+hugetlbfs - to allocate
+
+4 KB - regular
+2 MB or 1 GB - huge page size, can't mix
