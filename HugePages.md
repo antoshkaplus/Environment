@@ -10,6 +10,9 @@ https://www.kernel.org/doc/Documentation/vm/transhuge.txt
 Stats on Huge Pages
 https://kerneltalks.com/services/what-is-huge-pages-in-linux/
 
+Use Programatically
+https://techoverflow.net/2017/02/18/advantages-and-disadvantages-of-hugepages/
+
 
 Need large mappings that they will do random access to, cuz it's worst possible case for TLB (Translation Lookaside Buffer).
 
