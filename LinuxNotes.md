@@ -6,7 +6,9 @@ gdbserver --attach localhost:12121 pid
 **looking for process:** ps auxww|grep <process name>
 
 **grep:**  
-egrep 'string1|string2'
+egrep 'string1|string2' 
+**look for matching string in all files in path:**  
+grep -R "string" /path/to/files
 
 **file permisssions:**  
 sudo chmod 775 <file name>  
