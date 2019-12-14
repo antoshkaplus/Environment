@@ -16,6 +16,9 @@
 http://www.robotthoughts.com/2018/12/22/moving-the-root-partition-to-a-new-disk-in-ubuntu-18-10-general-grub-chicanery/
 instructions won't work unless: go to the new partition and in /etc/fstab update partition UUID using ```sudo blkid```
 
+### swapfile increase:
+https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
+
 ## Monitor & Benchmark
 
 ### configure sensors first. hddtemp - for hard disk:
