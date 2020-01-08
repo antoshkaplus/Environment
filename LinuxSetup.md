@@ -19,6 +19,16 @@ instructions won't work unless: go to the new partition and in /etc/fstab update
 ### swapfile increase:
 https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
 
+### make hibernate work:
+* https://askubuntu.com/questions/6769/hibernate-and-resume-from-a-swap-file
+use answer from @gokul
+
+* make sure "secure boot" turned off in BIOS by @Marc:
+https://askubuntu.com/questions/868208/how-to-activate-hibernation-in-16-04-1-systemd
+
+* adding hibernate button to the menu:
+http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
+
 ## Monitor & Benchmark
 
 ### configure sensors first. hddtemp - for hard disk:
