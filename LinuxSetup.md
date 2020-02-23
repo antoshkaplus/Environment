@@ -21,7 +21,8 @@ https://linuxize.com/post/how-to-add-swap-space-on-ubuntu-18-04/
 
 ### make hibernate work:
 * https://askubuntu.com/questions/6769/hibernate-and-resume-from-a-swap-file
-use answer from @gokul
+use answer from @gokul, may need dance with ```sudo dpkg-reconfigure -pmedium uswsusp``` 
+to get ```sudo s2disk``` working
 
 * make sure "secure boot" turned off in BIOS by @Marc:
 https://askubuntu.com/questions/868208/how-to-activate-hibernation-in-16-04-1-systemd
