@@ -8,7 +8,7 @@ git submodule foreach git checkout master
 git submodule foreach git-pull  
 make directories  
   
-**add submodule:**
+**add submodule:**  
 git submodule add -b master [URL to Git repo]  
   
 **delete branch:**  
