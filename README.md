@@ -25,3 +25,14 @@ c.FileContentsManager.post_save_hook = post_save
 ```
 
 so your sheets are saved in multiple files for easy use with git
+
+# pip upgrade packages:
+
+```python3
+import pkg_resources
+from subprocess import call
+
+packages = [dist.project_name for dist in pkg_resources.working_set]
+call("pip install --upgrade " + ' '.join(packages), shell=True)
+
+```
