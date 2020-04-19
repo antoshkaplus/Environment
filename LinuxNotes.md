@@ -72,3 +72,6 @@ You do relative times by prepending “-” or “+” to a numbered value or us
 **id of the user:**
 `id` - get your id
 `id -u username` - get someone else's id
+
+**nano control commands:**  
+https://monovm.com/post/35/how-to-search-in-nano
