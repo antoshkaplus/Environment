@@ -25,3 +25,5 @@ power cap as PSU is 450 Watt. And that considering I don't do any work on my vid
 
 From an article: `You hit a wall when your temperatures go over 80C under stress testing, which means you cannot add more voltage unless you increase cooling, so you can't add another multiplier and remain stable.`
 Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overclocking-guide/index.html
+
+Increasing base frequency undermines all Intel power saving technologies and supposed to wear out the chip quicker. 
