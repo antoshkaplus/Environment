@@ -30,3 +30,4 @@ Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overcloc
 
 Increasing base frequency undermines all Intel power saving technologies and supposed to wear out the chip quicker. 
 
+Fans: that's the biggest advantage of PWM - allowing control of an effectively unlimited number of fans from a single fan header using a powered splitter.
