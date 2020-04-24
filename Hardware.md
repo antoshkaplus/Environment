@@ -23,3 +23,5 @@ even though listed in bios menu (used minimal among all for me).
 After overclocking Turbo Boost to 4.9 GHz unable to move further. I believe due to 
 power cap as PSU is 450 Watt. And that considering I don't do any work on my video card.
 
+From an article: `You hit a wall when your temperatures go over 80C under stress testing, which means you cannot add more voltage unless you increase cooling, so you can't add another multiplier and remain stable.`
+Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overclocking-guide/index.html
