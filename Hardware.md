@@ -12,6 +12,8 @@ https://linuxhint.com/useful_linux_stress_test_benchmark_cpu_perf/
 * to know current cpu frequencies:
 ```sudo cat /proc/cpuinfo```
 
+* thermal paste is much better then pads
+
 ### Overclocking CPU:
 The best option is to increase Turbo Boost frequency. 
 The motherboard has to support overclocking and should provide 
@@ -27,3 +29,4 @@ From an article: `You hit a wall when your temperatures go over 80C under stress
 Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overclocking-guide/index.html
 
 Increasing base frequency undermines all Intel power saving technologies and supposed to wear out the chip quicker. 
+
