@@ -20,3 +20,6 @@ It's a good idea to follow what manufacturer did for premium processor
 of the same series.
 Be aware that motherboard may not provide individual processor frequency assignment,
 even though listed in bios menu (used minimal among all for me).
+After overclocking Turbo Boost to 4.9 GHz unable to move further. I believe due to 
+power cap as PSU is 450 Watt. And that considering I don't do any work on my video card.
+
