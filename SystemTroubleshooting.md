@@ -13,3 +13,5 @@ to reserve space for it, use Live USB System Installation to create boot partiti
 the system partition.
 
 For Windows look at ```$bootrec /rebuildbcd``` in Repairs Command Line.
+
+On EFI systems Windows can only be installed to GPT tabled disks.
