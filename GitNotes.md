@@ -15,13 +15,19 @@ git submodule add -b master [URL to Git repo]
 git push origin --delete <branch_name>  
 git branch -d <branch_name>  
 
-**delte all local branches**
+**delete all local branches**
 git branch | xargs git branch -D 
 
 **stash to diff:**  
 git stash show -p stash@{0} > oms.diff  
 *make diff from current changes*  
 git diff >> file.diff  
+
+When working in one branch and need to switch to work on another, can commit current changes.
+Later do ```git reset HEAD~ --soft```. If you want to continue working in the same branch, create 
+another branch maybe with ```_temp``` suffix. Commit everything there. After your work is done,
+do ```git cherry-pick temp_branch --no-commit (-n)``` to get back your changes. Delete temp branch 
+afterwards.
 
 **apply diff:**  
 git apply change.diff
