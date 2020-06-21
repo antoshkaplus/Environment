@@ -11,6 +11,14 @@ make directories
 **add submodule:**  
 git submodule add -b master [URL to Git repo]  
   
+**delete submodule:**
+```
+git submodule deinit <path_to_submodule>
+git rm <path_to_submodule>
+git commit-m "Removed submodule "
+rm -rf .git/modules/<path_to_submodule>
+```
+
 **delete branch:**  
 git push origin --delete <branch_name>  
 git branch -d <branch_name>  
