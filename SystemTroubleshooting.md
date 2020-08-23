@@ -15,3 +15,8 @@ the system partition.
 For Windows look at ```$bootrec /rebuildbcd``` in Repairs Command Line.
 
 On EFI systems Windows can only be installed to GPT tabled disks.
+
+### Viber UI Scale:
+Viber UI may be oversized. To fix find corresponding viber.desktop and add:
+```bash -c "QT_AUTO_SCREEN_SCALE_FACTOR=0 viber" %u```
+https://www.reddit.com/r/linuxquestions/comments/5rm8so/issue_with_viber_interface_scaling/
