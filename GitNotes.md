@@ -56,3 +56,25 @@ git config --global credential.helper 'cache --timeout=3600' (setting is in seco
 
 **reset origin**  
 git remote set-url origin https://github.com/USERNAME/REPOSITORY.git  
+
+**git config**
+```git
+[user]
+	name = Anton Logunov
+	email = antoshkaplus@gmail.com
+[core]
+	autocrlf = input
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	st = status
+	co = checkout
+	dev-merge = !git co master && git pull && git co dev && git merge master && git co master && git merge dev && git push && git co dev
+```
