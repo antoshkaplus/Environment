@@ -20,3 +20,6 @@ On EFI systems Windows can only be installed to GPT tabled disks.
 Viber UI may be oversized. To fix find corresponding viber.desktop and add:
 ```bash -c "QT_AUTO_SCREEN_SCALE_FACTOR=0 viber" %u```
 https://www.reddit.com/r/linuxquestions/comments/5rm8so/issue_with_viber_interface_scaling/
+
+### Touchpad right click with two finger tap:
+https://unix.stackexchange.com/questions/543704/how-do-i-enable-two-finger-right-click-in-ubuntu-gnome
