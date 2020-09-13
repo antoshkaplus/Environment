@@ -30,6 +30,9 @@ https://askubuntu.com/questions/868208/how-to-activate-hibernation-in-16-04-1-sy
 * adding hibernate button to the menu:
 http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
 
+### hibernate on lid closed:
+http://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
+
 ## Monitor & Benchmark
 
 ### configure sensors first. hddtemp - for hard disk:
