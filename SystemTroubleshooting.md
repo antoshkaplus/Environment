@@ -23,3 +23,10 @@ https://www.reddit.com/r/linuxquestions/comments/5rm8so/issue_with_viber_interfa
 
 ### Touchpad right click with two finger tap:
 https://unix.stackexchange.com/questions/543704/how-do-i-enable-two-finger-right-click-in-ubuntu-gnome
+
+### Sometimes may need to disable laptop keyboard/touchpad:
+```
+xinput -list
+xinput float <id>
+xinput reattach <id> <master>
+```
