@@ -3,12 +3,12 @@
 `gdbserver localhost:12121 /... path to bin file`  
 `gdbserver --attach localhost:12121 pid`
 
-**looking for process:** ps auxww|grep <process name>
+**looking for process:** `ps auxww|grep <process name>`  
+usually used along with `kill -9 PID`
 
-**grep:**  
-egrep 'string1|string2' 
-**look for matching string in all files in path:**  
-grep -R "string" /path/to/files
+**grep:** `egrep 'string1|string2'`
+
+**look for matching string in all files in path:** `grep -R "string" /path/to/files`
 
 **file permisssions:**  
 ```
