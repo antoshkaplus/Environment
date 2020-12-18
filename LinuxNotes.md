@@ -3,7 +3,9 @@
 `gdbserver localhost:12121 /... path to bin file`  
 `gdbserver --attach localhost:12121 pid`
 
-**looking for process:** `ps auxww|grep <process name>`  
+**looking for process:**  
+`ps auxww|grep <process name>`  
+``top -p `pgrep python | tr "\\n" "," | sed 's/,$//'` -o %MEM`` 
 usually used along with `kill -9 PID`
 
 **grep:** `egrep 'string1|string2'`
