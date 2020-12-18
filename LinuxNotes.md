@@ -5,7 +5,7 @@
 
 **looking for process:**  
 `ps auxww|grep <process name>`  
-``top -p `pgrep python | tr "\\n" "," | sed 's/,$//'` -o %MEM`` 
+``top -p `pgrep python | tr "\\n" "," | sed 's/,$//'` -o %MEM``  
 usually used along with `kill -9 PID`
 
 **grep:** `egrep 'string1|string2'`
