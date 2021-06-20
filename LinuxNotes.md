@@ -33,8 +33,16 @@ scp /path/to/source username@/path/to/destination
 * sudo crontab -l  
 * sudo crontab -e
 
+**ssh put process in bg execution**
+* want to start in the bg:
+`nohup long-running-command &`
+* process was already started:
+```
+ctrl+z
+bg
+disown -h
+```
 **nohup** don't terminate the process if terminal is remote and connection get lost, input and output can be specified but otherwise ignored
-
 **&** execute process in the bg, providing back prompt immediately
 
 **ps aux | grep \<pattern\>** grepping process by name
