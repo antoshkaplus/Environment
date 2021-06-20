@@ -42,8 +42,8 @@ ctrl+z
 bg
 disown -h
 ```
-**nohup** don't terminate the process if terminal is remote and connection get lost, input and output can be specified but otherwise ignored
-**&** execute process in the bg, providing back prompt immediately
+*nohup* don't terminate the process if terminal is remote and connection get lost, input and output can be specified but otherwise ignored
+*&* execute process in the bg, providing back prompt immediately
 
 **ps aux | grep \<pattern\>** grepping process by name
 
