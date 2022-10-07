@@ -33,6 +33,9 @@ http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
 ### hibernate on lid closed:
 http://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
 
+### allow hibernation:
+```sudo nano /etc/systemd/sleep.conf```
+
 ## Monitor & Benchmark
 
 ### configure sensors first. hddtemp - for hard disk:
