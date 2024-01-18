@@ -1,18 +1,31 @@
-* managing airflow in the case:
-https://www.howtogeek.com/303078/
+### Notes:
+* managing airflow in the case: 
+  https://www.howtogeek.com/303078/
+* thermal paste is much better then pads
+* before updating BIOS save your current/needed profiles somewhere, 
+  as the operation cleans up everything.
 
-* monitor temperatures:
-sudo apt install lm-sensors hddtemp    
-sudo apt install psensor  
-psensor - GUI to view system temperatures  
+### Optimization Tools:
 
-* stress test:
-https://linuxhint.com/useful_linux_stress_test_benchmark_cpu_perf/
+#### Windows:
+* Core Temp
+* HWMonitor
+* Prime95: for stability check AVX2 is not needed. 
+    Just make sure usual AVX512 is without errors. It's OK if during AVX testing
+    temperatures are about 90. You probably want have it under normal loads.
+
+#### Linux:
+* sudo apt install lm-sensors hddtemp    
+* sudo apt install psensor  
+* psensor - GUI to view system temperatures
+* https://linuxhint.com/useful_linux_stress_test_benchmark_cpu_perf/
+* Prime95 too.
+* s-tui - is really good all-in-one tool to monitor frequencies, temperatures and also stress testing.
+    But for stability testing use Prime95.
 
 * to know current cpu frequencies:
 ```sudo cat /proc/cpuinfo```
 
-* thermal paste is much better then pads
 
 ### Overclocking CPU:
 The best option is to increase Turbo Boost frequency. 
