@@ -1,4 +1,4 @@
-Mobo: Z390 Gaming 
+Mobo: GIGABYTE Z390 Gaming 
 CPU: i5-9600K
 
 Intel performance optimizer showed frequency 4.8 GHz.
@@ -26,7 +26,7 @@ During monitoring, it's important to remember:
 VCore - voltage CPU is using.
 VID - voltage CPU is asking for.
 
-To ensure stability we will run Prime95 Small FFT without disabling AVX2.
+To ensure stability we will run Prime95 Small FFT with AVX and AVX2 on.
 Monitor CPU Max values: VCore, Power Consumption, Temperature.
 
 Stability was achived at 4.7Ghz and -0.045V offset: 1.320V, 168.96W, 91C
