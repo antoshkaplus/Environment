@@ -6,7 +6,8 @@ import subprocess
 # It opens user home by default though.
 prime_path = 'Tools/Prime95'
 
-subprocess.Popen("gnome-terminal --title=Vcore -- watch -n1 'echo \"scale=2; $(sudo rdmsr 0x198 -u --bitfield 47:32)/8192\" | bc'", shell=True)
+subprocess.Popen("gnome-terminal --title=Vcore -- watch -n1 " 
+                 "'echo \"scale=2; $(sudo rdmsr 0x198 -u --bitfield 47:32)/8192\" | bc'", shell=True)
 subprocess.Popen("gnome-terminal --title=Watt -- sudo turbostat -s PkgWatt", shell=True)
 subprocess.Popen("gnome-terminal --title=Temp/Freq -- s-tui", shell=True)
 subprocess.Popen(f"gnome-terminal --working-directory={prime_path} --title=Prime95 -- ./mprime -m", shell=True)
