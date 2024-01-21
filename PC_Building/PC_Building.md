@@ -60,7 +60,7 @@ For personal computer we should use `performance` governor:
 ```
 sudo crontab -e
 ----------
-@reboot cpufreq-set -r -g performance
+@reboot cpupower frequency-set --governor performance
 ---------- 
 ```
 
