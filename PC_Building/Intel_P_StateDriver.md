@@ -83,7 +83,7 @@ Sysfs will show :
 Refer to "Intel 64 and IA-32 Architectures Software Developer's Manual
 Volume 3: System Programming Guide" to understand ratios.
 
-There is one more sysfs attribute in /sys/devices/system/cpu/intel_pstate/
+There is one more sysfs attribute in /sys/devices/system/cpu/intel_pstate/status
 that can be used for controlling the operation mode of the driver:
 
       status: Three settings are possible:

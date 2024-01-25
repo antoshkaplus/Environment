@@ -39,10 +39,6 @@ https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt#:~:text=The%20%2
 
 https://stackoverflow.com/questions/72538226/cpufreq-governors-schedutil-missing
 
-https://phoenixnap.com/kb/build-linux-kernel
-
-If you run make menuconfig, it’s under Power management and ACPI options → CPU Frequency scaling → Default CPUFreq governor
-(CPU_FREQ_DEFAULT_GOV_*)
 
 https://forum.level1techs.com/t/solved-change-default-cpu-governor/175322/2
 
@@ -52,3 +48,15 @@ https://www.reddit.com/r/archlinux/comments/r41ax3/uninstall_or_disable_gnome_po
 https://www.askwoody.com/forums/topic/disabling-a-cpu-feature-intel-turbo-boost/#:~:text=Disabling%20Turbo%20Boost%20completely%20would,is%20actually%20what%20you%20want!
 https://github.com/Rongronggg9/power-profiles-daemon/blob/ds/README.md
 https://community.intel.com/t5/Software-Tuning-Performance/power-consumption-in-turboboost/td-p/1004179
+
+
+
+
+Now we try to test with disabled intel_pstate:
+```bash
+sudo nano /etc/default/grub
+GRUB_CMD_LINUX_DEFAULT="intel_pstate=disable"
+sudo update-grub
+```
+Reboot.
+Check `cpupower freuency-info`
