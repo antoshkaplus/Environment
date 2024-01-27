@@ -1,3 +1,6 @@
+
+<https://www.kernel.org/doc/html/v4.19/admin-guide/pm/intel_pstate.html>
+
 Intel P-State driver
 --------------------
 
@@ -48,25 +51,38 @@ These files have been added to /sys/devices/system/cpu/intel_pstate/.
 Any changes made to these files are applicable to all CPUs (even in a
 multi-package system, Refer to later section on placing "Per-CPU limits").
 
-      max_perf_pct: Limits the maximum P-State that will be requested by
+* *max_perf_pct*: Limits the maximum P-State that will be requested by 
       the driver. It states it as a percentage of the available performance. The
       available (P-State) performance may be reduced by the no_turbo
       setting described below.
 
-      min_perf_pct: Limits the minimum P-State that will be requested by
+* *min_perf_pct*: Limits the minimum P-State that will be requested by
       the driver. It states it as a percentage of the max (non-turbo)
       performance level.
 
-      no_turbo: Limits the driver to selecting P-State below the turbo
+* *no_turbo*: Limits the driver to selecting P-State below the turbo
       frequency range.
 
-      turbo_pct: Displays the percentage of the total performance that
+* *turbo_pct*: Displays the percentage of the total performance that
       is supported by hardware that is in the turbo range. This number
       is independent of whether turbo has been disabled or not.
 
-      num_pstates: Displays the number of P-States that are supported
+* *num_pstates*: Displays the number of P-States that are supported
       by hardware. This number is independent of whether turbo has
       been disabled or not.
+    
+* *hwp_dynamic_boost*: This attribute is only present if intel_pstate works 
+      in the active mode with the HWP feature enabled in the processor. If set (equal to 1), 
+      it causes the minimum P-state limit to be increased dynamically for a short time 
+      whenever a task previously waiting on I/O is selected to run on a given logical CPU 
+      (the purpose of this mechanism is to improve performance).
+      This setting has no effect on logical CPUs whose minimum P-state limit is directly 
+      set to the highest non-turbo P-state or above it.
+      
+* *energy_efficiency*: P-State is set to offer a "energy_efficiency_enable" node on sysfs that can be enabled to force 
+      the more energy efficient CPU mode. Enabling the "Energy Efficiency" mode will help lower power usage 
+      and in turn lower heat output and lower power usage, but with the CPU not likely to be running in 
+      its highest performance state when needed.
 
 For example, if a system has these parameters:
 	Max 1 core turbo ratio: 0x21 (Max 1 core ratio is the maximum P-State)
@@ -103,28 +119,28 @@ cpufreq sysfs for Intel P-State
 Since this driver registers with cpufreq, cpufreq sysfs is also presented.
 There are some important differences, which need to be considered.
 
-scaling_cur_freq: This displays the real frequency which was used during
+`scaling_cur_freq`: This displays the real frequency which was used during
 the last sample period instead of what is requested. Some other cpufreq driver,
 like acpi-cpufreq, displays what is requested (Some changes are on the
 way to fix this for acpi-cpufreq driver). The same is true for frequencies
 displayed at /proc/cpuinfo.
 
-scaling_governor: This displays current active policy. Since each CPU has a
+`scaling_governor`: This displays current active policy. Since each CPU has a
 cpufreq sysfs, it is possible to set a scaling governor to each CPU. But this
 is not possible with Intel P-States, as there is one common policy for all
 CPUs. Here, the last requested policy will be applicable to all CPUs. It is
 suggested that one use the cpupower utility to change policy to all CPUs at the
 same time.
 
-scaling_setspeed: This attribute can never be used with Intel P-State.
+`scaling_setspeed`: This attribute can never be used with Intel P-State.
 
-scaling_max_freq/scaling_min_freq: This interface can be used similarly to
+`scaling_max_freq/scaling_min_freq`: This interface can be used similarly to
 the max_perf_pct/min_perf_pct of Intel P-State sysfs. However since frequencies
 are converted to nearest possible P-State, this is prone to rounding errors.
 This method is not preferred to limit performance.
 
-affected_cpus: Not used
-related_cpus: Not used
+`affected_cpus`: Not used
+`related_cpus`: Not used
 
 For contemporary Intel processors, the frequency is controlled by the
 processor itself and the P-State exposed to software is related to
