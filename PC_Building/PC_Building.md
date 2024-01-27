@@ -49,21 +49,3 @@ Ubuntu monitoring:
 * https://github.com/torvalds/linux/blob/master/tools/power/x86/turbostat/turbostat.c
 * https://software.intel.com/en-us/forums/software-tuning-performance-optimization-platform-monitoring/topic/749357
 * wiki.ubuntu.com/OverclockingCpu
-
-#### Linux 
-For Intel processors CPU frequencies are controlled by `intel_pstate` driver.
-Alternative is `acpi`. `intel_pstate` has only two governor states: 
-`powersave` and `performance`. `acpi` has also `ondemand` governor.
-Default kernel uses `powersave` as a default governor. This governor may 
-throttle CPU frequencies during long-running tasks.
-For personal computer we should use `performance` governor:
-```
-sudo crontab -e
-----------
-@reboot cpupower frequency-set --governor performance
----------- 
-```
-
-### Fans: 
-`That's the biggest advantage of PWM - allowing control of an effectively unlimited number of fans from a single fan header using a powered splitter`. In most cases though using Y-splitter is enough. PWM gives better control than Voltage on lower speeds, which is doesn't matter as we don't want to save power and at low speed it should be without noise anyway.
-Interestingly the price doesn't differ much.
