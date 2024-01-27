@@ -70,7 +70,7 @@ System restarted in after 9 minutes. Instability detected.
 System restarted in after 18 minutes. Instability detected.
 
 #### P@5.5GHz E@4.3GHz. Vcore offset @ -0.04 | 30 min per test
-1. Temp Throttle. P:4.9-5.5, E:3.9-4 | 100C | 1.34 | 300W
+1. Temp Throttle. P:4.9-5.5, E:3.9-4 | 100C | 1.34V | 300W
 The system looks stable after 36 min but there are overheating problem on some
 cores most to least:
 CPU: 5,7,3
@@ -83,3 +83,6 @@ Also remember to tighten the base of water cooler on the motherboard after
 taking off watercooler (base bolts get loose). 
 We will probably use 5 dot pattern this time.
 Strive for most coverage and least thickness.
+
+Using Overclocking.md *Overclocking Stability Test Plan* on Ubuntu:
+
