@@ -25,15 +25,15 @@ VID - voltage CPU is asking for.
 #### Progress:
 
 Intel performance optimizer showed frequency 4.8 GHz.
-@5 we get > 1.4V on BIOS screen - drop consideration.  
-@4.9 Prime 95 fails AVX2 with blue screen. 
+
+* @5 we get > 1.4V on BIOS screen - drop consideration.  
+* @4.9 Prime 95 fails AVX2 with blue screen. 
     Without AVX2 still getting an error on one of the workers.
     Could do offsets for AVX but don't consider it worth it.
-@4.8 can do AVX2 temp are in 90s. Cores #2#3 (init #0) get hot.
+* @4.8 can do AVX2 temp are in 90s. Cores #2#3 (init #0) get hot.
     Got error in the stress test. Without AVX2 the system looks stable.
 
 To ensure stability we will run Prime95 Small FFT with AVX and AVX2 on.
-Monitor CPU Max values: VCore, Power Consumption, Temperature.
 
-Stability was achived at 4.7Ghz and -0.045V offset: 1.320V, 168.96W, 91C
-Still unstable, reducing to -0.04V offset.
+* Stability was achived @4.7Ghz and -0.045V offset: 1.320V, 168.96W, 91C
+* Error discovered on Windows Prime95, reducing to -0.04V offset.
