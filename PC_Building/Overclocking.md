@@ -1,10 +1,16 @@
 
 #### Overclocking Stability Test Plan
-1. Prime95 | Small FFT | AVX and AVX2 on | Use max cores where no throttle
-2. If (1) reduced cores : run all cores with throttle allowed
-3. Run s-tui stress test to see real world problem performance.
+
+Each time we should create a stability test plan. 
+Here are some components that could be used:
+1. Prime95 | Smallest FFT | AVX and AVX2 on (when overhiating with Small FFT) 
+2. Prime95 | Small FFT | AVX and AVX2 on
+
 Each test should run for 10-15 min. 
 Final tests should run 30 min.
+
+It's also nice to run some real world stress test to see 
+measurements, like s-tui stress test.
 
 In our tests we note: 
 * OS (operating system)
