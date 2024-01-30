@@ -39,30 +39,11 @@
   * Watt: `sudo turbostat -s PkgWatt`
   * Temp/Freq: `s-tui`
 
-#### Linux Links:
+*Linux Links*:
 * https://www.binarytides.com/monitor-cpu-power-consumption-on-ubuntu/
 * https://wiki.ubuntu.com/OverclockingCpu
 
-
-### Overclocking CPU:
-The best option is to increase Turbo Boost frequency. 
-The motherboard has to support overclocking and should provide 
-adaptive voltage. Remove limits on power consumption.
-It's a good idea to follow what manufacturer did for premium processor 
-of the same series.
-Be aware that motherboard may not provide individual processor frequency assignment,
-even though listed in bios menu (used minimal among all for me).
-To support max Turbo Boost per processor assignment, the processor should probably
-support Turbo Boost Max 3.0.
-
-From an article: `You hit a wall when your temperatures go over 80C under stress testing, which means you cannot add more voltage unless you increase cooling, so you can't add another multiplier and remain stable.`
-Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overclocking-guide/index.html
-
-Increasing base frequency undermines all Intel power saving technologies and supposed to wear out the chip quicker. 
-
-Gigabyte guild: https://www.gigabyte.com/FileUpload/Global/multimedia/2/file/525/946.pdf
-
-Ubuntu monitoring:
+*Ubuntu monitoring Links*:
 * https://github.com/torvalds/linux/blob/master/tools/power/x86/turbostat/turbostat.c
 * https://software.intel.com/en-us/forums/software-tuning-performance-optimization-platform-monitoring/topic/749357
 * wiki.ubuntu.com/OverclockingCpu

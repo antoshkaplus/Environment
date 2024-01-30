@@ -1,5 +1,18 @@
+## Notes:
+* Increasing base frequency undermines all Intel power saving technologies 
+  and supposed to wear out the chip quicker.
+* From an article: `You hit a wall when your temperatures go over 80C under stress testing, which means you cannot add more voltage unless you increase cooling, so you can't add another multiplier and remain stable.`
+  Read more: https://www.tweaktown.com/guides/9225/intel-core-i9-9900k-kf-overclocking-guide/index.html
+* The best option is to increase Turbo Boost frequency. 
+* The motherboard has to support overclocking and should provide 
+  adaptive voltage. Remove limits on power consumption.
+* It's a good idea to follow what manufacturer did for premium processor 
+  of the same series.
+* Be aware that motherboard may not provide individual processor frequency assignment,
+  even though listed in bios menu (used minimal among all for me).
 
-#### Overclocking Stability Test Plan
+
+## Overclocking Stability Test Plan
 
 Each time we should create a stability test plan. 
 Here are some components that could be used:
@@ -35,6 +48,7 @@ All cores Turbo is the main priority.
 
 
 ## Vdroop
+
 Short for voltage droop, it's essentially a situation where voltage can drop way 
 too low or also rise way too much. When your system is idling it’s perfectly capable
 of holding the voltage you have set in the BIOS. However, under initial heavy load, 
@@ -42,6 +56,8 @@ power to your CPU drops and the amount it drops increases as the workload increa
 Voltage will then rise up quickly. This happens in a blink of an eye, and always 
 when your CPU transitions from a state of idle to a state of load. 
 
+
+## Concepts
 
 CPU: “Hey Mobo, I’m running at 4.9GHz, give me 1.350v. That’s what I normally need.” (VID)
 Mobo: “Nah, you’re on a diet. Here’s 1.250v. Deal with it!” (Manual Vcore)
@@ -58,5 +74,35 @@ CPU: “That works for me!”
 (A few moments later)
 CPU: “Mobo, I have been resting but I feel like I’m going to have a heart attack!”
 Mobo: “Dang man, you’re right. Your idle voltage is way too low with that 100mv offset. 
-  What about if I just give you 1.250v when you workout and offset 50mv across the board all other times instead?” (Adaptive Vcore)
+  What about if I just give you 1.250v when you workout and 
+  offset 50mv across the board all other times instead?” (Adaptive Vcore)
 CPU: “I think that would work best. Thanks bro!”
+
+VCore - voltage CPU is using.
+VID - voltage CPU is asking for.
+
+
+## Overclocking / Undervolting:
+
+The primary goal is to undervolt and maybe move up Turbo Boost frequency a notch. 
+
+If during Prime95 testing, we get throttled by power or temperature,
+we should conduct tests on limited numbers of P-cores, E-cores. 
+Maybe deactivate P-cores during E-cores testing. It's required to test stability
+with a maximum load on a single core.
+
+(1) If in realistic workloads we have available power we can increase Boost frequencies.
+If PC becomes unstable - can try to move up a Load-Line Calibration a level. 
+It should provide higher voltages during higher loads. With that, monitor
+VCore under higher loads - should still be bounds normal for the specific CPU. 
+
+(2) Undervolting is achived by offsetting voltage mobo wants to provide the CPU.
+This setting is named: `Dynamic Vcore (DVID)`. While `CPU Vcore` should be set to `Normal`.
+We try to increase negative offset and remain stable. 
+
+Here, again, we can apply a trick with Load-Line Calibration to remain 
+stable in unrealistic test loads. Make sure it does benefit realistic 
+workloads.
+
+### Links:
+Gigabyte guild: https://www.gigabyte.com/FileUpload/Global/multimedia/2/file/525/946.pdf

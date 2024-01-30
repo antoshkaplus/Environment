@@ -12,24 +12,8 @@ since I don't plan running virtual machines.
 
 Using available Extreme Memory Profile (X.M.P.).
 
-### Overclocking / Undervolting:
 
-My goal was to undervolt and maybe move up Turbo Boost frequency a notch. 
-Overvolting is not a goal as it generates considerably more heat and consumes plenty of energy. 
-
-(1) Undervolting is achived by offsetting voltage mobo wants to provide the CPU.
-This setting is named: `Dynamic Vcore (DVID)`. While `CPU Vcore` should be set to `Normal`.
-
-(2) It's also possible to offset voltage even further if we set limit on power.
-That limit should reflect all core realistic scenario, instead of worst case Prime95.
-Testing stability with power limit should include tests with (active cores < all cores) 
-to test core highest possible load stability. 
-
-During monitoring, it's important to remember:
-VCore - voltage CPU is using.
-VID - voltage CPU is asking for.
-
-#### Progress (1):
+#### Overclocking / Undervolting:
 
 Intel Performance Optimizer showed frequency 4.8 GHz.
 
@@ -50,7 +34,7 @@ To ensure stability we will run Prime95 Small FFT with AVX and AVX2 on.
 **On Ubuntu**:
 
 Stability test plan:
-1. Prime95 | Small FFT | AVX and AVX2 on | Use max cores where no throttle
+1. Prime95 | Small FFT | AVX and AVX2 on | All cores
 2. Run s-tui stress test to see real world problem performance.
 
 Results:
