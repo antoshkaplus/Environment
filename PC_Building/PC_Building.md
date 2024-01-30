@@ -1,9 +1,18 @@
 ### Notes:
 * managing airflow in the case: 
   https://www.howtogeek.com/303078/
-* thermal paste is much better then pads
 * before updating BIOS save your current/needed profiles somewhere, 
   as the operation cleans up everything.
+
+
+### Thermal Paste Application:
+* Thermal paste is much better then pads
+* When reapplying thermal paste: remember to tighten cooler 
+  screws attached to the motherboard. They get loose during 
+  disassembly.
+* On rectangular CPUs use 5 dot pattern this time.
+  Strive for most coverage and least thickness.
+
 
 ### Optimization Tools:
 
@@ -22,9 +31,17 @@
 * Prime95 too.
 * s-tui - is really good all-in-one tool to monitor frequencies, temperatures and also stress testing.
     But for stability testing use Prime95.
+* to know current cpu frequencies: `sudo cat /proc/cpuinfo`
+* *Monitoring*:
+  * Vcore: `watch -n1 'echo "scale=2; $(sudo rdmsr 0x198 -u --bitfield 47:32)/8192" | bc'`
+      from: https://askubuntu.com/questions/876286/how-to-monitor-the-vcore-voltage
+      requires: `msr-tools` pkg.
+  * Watt: `sudo turbostat -s PkgWatt`
+  * Temp/Freq: `s-tui`
 
-* to know current cpu frequencies:
-```sudo cat /proc/cpuinfo```
+#### Linux Links:
+* https://www.binarytides.com/monitor-cpu-power-consumption-on-ubuntu/
+* https://wiki.ubuntu.com/OverclockingCpu
 
 
 ### Overclocking CPU:
